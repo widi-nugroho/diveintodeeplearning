@@ -32,4 +32,11 @@ fun main(){
 
     x.set(NDIndex("0:2, :"), 12)
     println(x)
+
+    x.set(NDIndex(1,1),x.get(0,0))
+    println(x)
+
+    var y = manager.arange(25).reshape(Shape(5,5))
+    println(y)
+    println(y.get("0:2,0:2"))
 }
